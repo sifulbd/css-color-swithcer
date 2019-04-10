@@ -1,0 +1,89 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--=== meta ===-->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Style Switcher</title>
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+
+    <!--=== custom css ===-->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Color CSS -->
+    <link rel="stylesheet" href="css/red.css" title="red">
+    <link rel="stylesheet" href="css/blue.css" title="blue">
+    <link rel="stylesheet" href="css/green.css" title="green">
+    <link rel="stylesheet" href="css/gold.css" title="yellow">
+
+
+</head>
+<body style="background-image: url('images/body-shape.jpg')">
+    <header>
+        <div class="overlay">
+            <div class="container text-center">
+            </div>
+        </div>
+        <div class="cloude-move"></div>
+        <div class="cloude-move-rev"></div>
+        <div class="cloude-move-ctl"></div>
+        <div class="cloude-move-ctr"></div>
+        <div class="cloude-move-ctt"></div>
+        <div class="cloude-move-ctb"></div>
+    </header>
+
+    <!--=== fixed js ===-->
+    <script src="js/jquery.min.js"></script> <!-- jQuery v3.1.1 -->
+
+
+
+    <!-- ****************
+      After neccessary customization/modification, Please minify 
+      JavaScript/jQuery according to http://browserdiet.com/en/ for better performance
+    **************** -->
+    <!-- STYLE SWITCH STYLESHEET ONLY FOR DEMO -->
+    <style>
+        .demo-style-switch ul.styles li .green {
+            background: green !important;
+        }
+        .demo-style-switch ul.styles li .blue {
+            background: blue !important;
+        }
+        .demo-style-switch ul.styles li .red {
+            background: red !important;
+        }
+        .demo-style-switch ul.styles li .yellow {
+            background: yellow !important;
+        }
+    </style>
+    <link rel="stylesheet" href="http://cvresumetemplate.com/maha-personal-cv-resume-html-template/demo/demo.css">
+    <script type="text/javascript" src="http://cvresumetemplate.com/maha-personal-cv-resume-html-template/demo/styleswitcher.js"></script>
+    <script type="text/javascript" src="http://cvresumetemplate.com/maha-personal-cv-resume-html-template/demo/demo.js"></script>
+    <div class="demo-style-switch" id="switch-style">
+        <a id="toggle-switcher" class="switch-button"> <i class="fas fa-asterisk"></i></a>
+        <div class="switched-options">
+            <div class="config-title">
+                Available Colors :
+            </div>
+            <ul class="styles">
+                <li><a href="#" onclick="setActiveStyleSheet('blue'); return false;" title="blue">
+                    <div class="blue"></div></a>
+                </li>
+                <li><a href="#" onclick="setActiveStyleSheet('red'); return false;" title="red">
+                    <div class="red"></div></a>
+                </li>
+                <li><a href="#" onclick="setActiveStyleSheet('green'); return false;" title="green">
+                    <div class="green"></div></a>
+                </li>
+                <li><a href="#" onclick="setActiveStyleSheet('yellow'); return false;" title="yellow">
+                    <div class="yellow"></div></a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
